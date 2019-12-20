@@ -1,46 +1,75 @@
 #include <stdio.h>
+#define DEBUG
+struct date {
+    int year;
+    int month;
+    int day;
+};
 
+int is_LeapYear(int y){
+    if(y%400 == 0 || (y%4 == 0 && y%100 != 0 ))
+        return 1;
+    return 0;
+}
+
+//0 is common year,1 is leap year 
+int month_day[2][12] = {31,28,31,30,31,30,31,31,30,31,30,31,\
+                        31,29,31,30,31,30,31,31,30,31,30,31};
 int main()
 {
-  int n1;
-  int n2;
-  int y1,y2;
-  int m1,m2;
-  int d1,d2;
-  int i,j;
-  // the insight is add the day to the next
-  int month[2][13] = {0};
-  //place the day range of different year, array need init by 0
-  for(i = 0;i<2;i++){
-    for(j=0;j<13;j++){
-      if(i==0 || j==1){
-        month[i][j] = 29;
-        break;
-      }
-      if(i==1 || j == 1)
-      {
-        month[i][j] = 30;
-        break;
-      }
-      if(j == 3 && j == 5 && j == 8 && j == 10){
-        month[i][j] = 30;
-      }else{
-        month[i][j]= 31;
-      }
+    int i,j;
+    int countday=0;
+    printf("diff date calculation\n");
+    printf("please make sure first date forehead second date\n");
+    printf("------------------------\n");
+    // show the month
+    
+    /*    for(i=0; i<2; i++) */
+    /*    { */
+    /*    if(i == 0){ */
+    /*    printf("Common year\n"); */
+    /*    }else{ */
+    /*    printf("Leap year\n"); */
+    /*    } */
+    /*    for(j=0; j<12;j++) */
+    /*    { */
+    /*    printf("%d\n", month_day[i][j]); */
+    /*    } */
+    /*    } */
+
+    //stuct the date
+    struct date d1;
+    struct date d2;
+    
+    //input the data
+    printf("input first date:");
+    scanf("%4d%2d%2d", &d1.year, &d1.month, &d1.day);
+    printf("input second date:");
+    scanf("%4d%2d%2d", &d2.year, &d2.month, &d2.day);
+
+#ifdef DEBUG
+    printf("input shown\n");
+    printf("D1 %d-%d-%d\n", d1.year,d1.month,d1.day);
+    printf("D2 %d-%d-%d\n", d2.year,d2.month,d2.day);
+#endif
+
+
+    //legal input
+
+    while(d1.year != d2.year || d1.month != d2.month || d1.day != d2.day){
+        countday++;
+        d1.day++;
+        if(d1.day > month_day[is_LeapYear(d1.year)][d1.month - 1]){
+            d1.day = 1;
+            d1.month++;
+            if(d1.month > 12){
+                d1.year++;
+                d1.month = 1;
+            }
+        }
     }
-  }
-  for(i = 0;i<2;i++){
-    for(j=0;j<13;j++){
-      printf("%d\n",month[i][j]);
-    }
-  }
-  printf("input first date:");
-  scanf("%d",&n1);
-  printf("input second date:");
-  scanf("%d",&n2);
-  printf("year is: %d\n",n1/10000);
-  printf("year is: %d\n",n2/10000);
-  printf("int is %d\n",sizeof(int));
-  printf("month is :%d\n",0);
-  
+    
+    printf("count day = %d\n", countday);
+
+
 }
