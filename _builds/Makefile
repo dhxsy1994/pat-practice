@@ -111,6 +111,45 @@ depend:
 .PHONY : depend
 
 #=============================================================================
+# Target rules for targets named pat-b1022
+
+# Build rule for target.
+pat-b1022: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 pat-b1022
+.PHONY : pat-b1022
+
+# fast build rule for target.
+pat-b1022/fast:
+	$(MAKE) -f chapter3/CMakeFiles/pat-b1022.dir/build.make chapter3/CMakeFiles/pat-b1022.dir/build
+.PHONY : pat-b1022/fast
+
+#=============================================================================
+# Target rules for targets named codeup-1934
+
+# Build rule for target.
+codeup-1934: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 codeup-1934
+.PHONY : codeup-1934
+
+# fast build rule for target.
+codeup-1934/fast:
+	$(MAKE) -f chapter3/CMakeFiles/codeup-1934.dir/build.make chapter3/CMakeFiles/codeup-1934.dir/build
+.PHONY : codeup-1934/fast
+
+#=============================================================================
+# Target rules for targets named pat-b1032
+
+# Build rule for target.
+pat-b1032: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 pat-b1032
+.PHONY : pat-b1032
+
+# fast build rule for target.
+pat-b1032/fast:
+	$(MAKE) -f chapter3/CMakeFiles/pat-b1032.dir/build.make chapter3/CMakeFiles/pat-b1032.dir/build
+.PHONY : pat-b1032/fast
+
+#=============================================================================
 # Target rules for targets named codeup-1928
 
 # Build rule for target.
@@ -123,6 +162,32 @@ codeup-1928/fast:
 	$(MAKE) -f chapter3/CMakeFiles/codeup-1928.dir/build.make chapter3/CMakeFiles/codeup-1928.dir/build
 .PHONY : codeup-1928/fast
 
+#=============================================================================
+# Target rules for targets named pat-b1001
+
+# Build rule for target.
+pat-b1001: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 pat-b1001
+.PHONY : pat-b1001
+
+# fast build rule for target.
+pat-b1001/fast:
+	$(MAKE) -f chapter3/CMakeFiles/pat-b1001.dir/build.make chapter3/CMakeFiles/pat-b1001.dir/build
+.PHONY : pat-b1001/fast
+
+#=============================================================================
+# Target rules for targets named pat-b1036
+
+# Build rule for target.
+pat-b1036: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 pat-b1036
+.PHONY : pat-b1036
+
+# fast build rule for target.
+pat-b1036/fast:
+	$(MAKE) -f chapter3/CMakeFiles/pat-b1036.dir/build.make chapter3/CMakeFiles/pat-b1036.dir/build
+.PHONY : pat-b1036/fast
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -131,7 +196,12 @@ help:
 	@echo "... depend"
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
+	@echo "... pat-b1022"
+	@echo "... codeup-1934"
+	@echo "... pat-b1032"
 	@echo "... codeup-1928"
+	@echo "... pat-b1001"
+	@echo "... pat-b1036"
 .PHONY : help
 
 

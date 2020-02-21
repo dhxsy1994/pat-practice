@@ -1,0 +1,1 @@
+/usr/bin/cc   -rdynamic CMakeFiles/codeup-1934.dir/codeup-1934.c.o  -o codeup-1934 

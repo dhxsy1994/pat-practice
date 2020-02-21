@@ -1,0 +1,1 @@
+/usr/bin/cc   -rdynamic CMakeFiles/pat-b1036.dir/pat-b1036.c.o  -o pat-b1036 

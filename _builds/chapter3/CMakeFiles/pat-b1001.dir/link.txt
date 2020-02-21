@@ -1,0 +1,1 @@
+/usr/bin/cc   -rdynamic CMakeFiles/pat-b1001.dir/pat-b1001.c.o  -o pat-b1001 

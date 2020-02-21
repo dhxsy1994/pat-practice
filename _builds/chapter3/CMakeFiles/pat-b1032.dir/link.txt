@@ -1,0 +1,1 @@
+/usr/bin/cc   -rdynamic CMakeFiles/pat-b1032.dir/pat-b1032.c.o  -o pat-b1032 

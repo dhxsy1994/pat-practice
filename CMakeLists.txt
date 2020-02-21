@@ -9,3 +9,7 @@ project(Pat_solutions)
 add_subdirectory(chapter3)
 # 增加子目录 
 
+message("From top level:")
+message("   Source (general): ${PROJECT_SOURCE_DIR}")
+message("   Source (Pat_solutions): ${Pat_solutions_SOURCE_DIR}")
+

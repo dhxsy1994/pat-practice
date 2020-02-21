@@ -111,6 +111,51 @@ depend:
 .PHONY : depend
 
 # Convenience name for target.
+chapter3/CMakeFiles/pat-b1022.dir/rule:
+	cd /home/hessen/pat-practice/_builds && $(MAKE) -f CMakeFiles/Makefile2 chapter3/CMakeFiles/pat-b1022.dir/rule
+.PHONY : chapter3/CMakeFiles/pat-b1022.dir/rule
+
+# Convenience name for target.
+pat-b1022: chapter3/CMakeFiles/pat-b1022.dir/rule
+
+.PHONY : pat-b1022
+
+# fast build rule for target.
+pat-b1022/fast:
+	cd /home/hessen/pat-practice/_builds && $(MAKE) -f chapter3/CMakeFiles/pat-b1022.dir/build.make chapter3/CMakeFiles/pat-b1022.dir/build
+.PHONY : pat-b1022/fast
+
+# Convenience name for target.
+chapter3/CMakeFiles/codeup-1934.dir/rule:
+	cd /home/hessen/pat-practice/_builds && $(MAKE) -f CMakeFiles/Makefile2 chapter3/CMakeFiles/codeup-1934.dir/rule
+.PHONY : chapter3/CMakeFiles/codeup-1934.dir/rule
+
+# Convenience name for target.
+codeup-1934: chapter3/CMakeFiles/codeup-1934.dir/rule
+
+.PHONY : codeup-1934
+
+# fast build rule for target.
+codeup-1934/fast:
+	cd /home/hessen/pat-practice/_builds && $(MAKE) -f chapter3/CMakeFiles/codeup-1934.dir/build.make chapter3/CMakeFiles/codeup-1934.dir/build
+.PHONY : codeup-1934/fast
+
+# Convenience name for target.
+chapter3/CMakeFiles/pat-b1032.dir/rule:
+	cd /home/hessen/pat-practice/_builds && $(MAKE) -f CMakeFiles/Makefile2 chapter3/CMakeFiles/pat-b1032.dir/rule
+.PHONY : chapter3/CMakeFiles/pat-b1032.dir/rule
+
+# Convenience name for target.
+pat-b1032: chapter3/CMakeFiles/pat-b1032.dir/rule
+
+.PHONY : pat-b1032
+
+# fast build rule for target.
+pat-b1032/fast:
+	cd /home/hessen/pat-practice/_builds && $(MAKE) -f chapter3/CMakeFiles/pat-b1032.dir/build.make chapter3/CMakeFiles/pat-b1032.dir/build
+.PHONY : pat-b1032/fast
+
+# Convenience name for target.
 chapter3/CMakeFiles/codeup-1928.dir/rule:
 	cd /home/hessen/pat-practice/_builds && $(MAKE) -f CMakeFiles/Makefile2 chapter3/CMakeFiles/codeup-1928.dir/rule
 .PHONY : chapter3/CMakeFiles/codeup-1928.dir/rule
@@ -124,6 +169,36 @@ codeup-1928: chapter3/CMakeFiles/codeup-1928.dir/rule
 codeup-1928/fast:
 	cd /home/hessen/pat-practice/_builds && $(MAKE) -f chapter3/CMakeFiles/codeup-1928.dir/build.make chapter3/CMakeFiles/codeup-1928.dir/build
 .PHONY : codeup-1928/fast
+
+# Convenience name for target.
+chapter3/CMakeFiles/pat-b1001.dir/rule:
+	cd /home/hessen/pat-practice/_builds && $(MAKE) -f CMakeFiles/Makefile2 chapter3/CMakeFiles/pat-b1001.dir/rule
+.PHONY : chapter3/CMakeFiles/pat-b1001.dir/rule
+
+# Convenience name for target.
+pat-b1001: chapter3/CMakeFiles/pat-b1001.dir/rule
+
+.PHONY : pat-b1001
+
+# fast build rule for target.
+pat-b1001/fast:
+	cd /home/hessen/pat-practice/_builds && $(MAKE) -f chapter3/CMakeFiles/pat-b1001.dir/build.make chapter3/CMakeFiles/pat-b1001.dir/build
+.PHONY : pat-b1001/fast
+
+# Convenience name for target.
+chapter3/CMakeFiles/pat-b1036.dir/rule:
+	cd /home/hessen/pat-practice/_builds && $(MAKE) -f CMakeFiles/Makefile2 chapter3/CMakeFiles/pat-b1036.dir/rule
+.PHONY : chapter3/CMakeFiles/pat-b1036.dir/rule
+
+# Convenience name for target.
+pat-b1036: chapter3/CMakeFiles/pat-b1036.dir/rule
+
+.PHONY : pat-b1036
+
+# fast build rule for target.
+pat-b1036/fast:
+	cd /home/hessen/pat-practice/_builds && $(MAKE) -f chapter3/CMakeFiles/pat-b1036.dir/build.make chapter3/CMakeFiles/pat-b1036.dir/build
+.PHONY : pat-b1036/fast
 
 codeup-1928.o: codeup-1928.c.o
 
@@ -152,6 +227,141 @@ codeup-1928.c.s:
 	cd /home/hessen/pat-practice/_builds && $(MAKE) -f chapter3/CMakeFiles/codeup-1928.dir/build.make chapter3/CMakeFiles/codeup-1928.dir/codeup-1928.c.s
 .PHONY : codeup-1928.c.s
 
+codeup-1934.o: codeup-1934.c.o
+
+.PHONY : codeup-1934.o
+
+# target to build an object file
+codeup-1934.c.o:
+	cd /home/hessen/pat-practice/_builds && $(MAKE) -f chapter3/CMakeFiles/codeup-1934.dir/build.make chapter3/CMakeFiles/codeup-1934.dir/codeup-1934.c.o
+.PHONY : codeup-1934.c.o
+
+codeup-1934.i: codeup-1934.c.i
+
+.PHONY : codeup-1934.i
+
+# target to preprocess a source file
+codeup-1934.c.i:
+	cd /home/hessen/pat-practice/_builds && $(MAKE) -f chapter3/CMakeFiles/codeup-1934.dir/build.make chapter3/CMakeFiles/codeup-1934.dir/codeup-1934.c.i
+.PHONY : codeup-1934.c.i
+
+codeup-1934.s: codeup-1934.c.s
+
+.PHONY : codeup-1934.s
+
+# target to generate assembly for a file
+codeup-1934.c.s:
+	cd /home/hessen/pat-practice/_builds && $(MAKE) -f chapter3/CMakeFiles/codeup-1934.dir/build.make chapter3/CMakeFiles/codeup-1934.dir/codeup-1934.c.s
+.PHONY : codeup-1934.c.s
+
+pat-b1001.o: pat-b1001.c.o
+
+.PHONY : pat-b1001.o
+
+# target to build an object file
+pat-b1001.c.o:
+	cd /home/hessen/pat-practice/_builds && $(MAKE) -f chapter3/CMakeFiles/pat-b1001.dir/build.make chapter3/CMakeFiles/pat-b1001.dir/pat-b1001.c.o
+.PHONY : pat-b1001.c.o
+
+pat-b1001.i: pat-b1001.c.i
+
+.PHONY : pat-b1001.i
+
+# target to preprocess a source file
+pat-b1001.c.i:
+	cd /home/hessen/pat-practice/_builds && $(MAKE) -f chapter3/CMakeFiles/pat-b1001.dir/build.make chapter3/CMakeFiles/pat-b1001.dir/pat-b1001.c.i
+.PHONY : pat-b1001.c.i
+
+pat-b1001.s: pat-b1001.c.s
+
+.PHONY : pat-b1001.s
+
+# target to generate assembly for a file
+pat-b1001.c.s:
+	cd /home/hessen/pat-practice/_builds && $(MAKE) -f chapter3/CMakeFiles/pat-b1001.dir/build.make chapter3/CMakeFiles/pat-b1001.dir/pat-b1001.c.s
+.PHONY : pat-b1001.c.s
+
+pat-b1022.o: pat-b1022.c.o
+
+.PHONY : pat-b1022.o
+
+# target to build an object file
+pat-b1022.c.o:
+	cd /home/hessen/pat-practice/_builds && $(MAKE) -f chapter3/CMakeFiles/pat-b1022.dir/build.make chapter3/CMakeFiles/pat-b1022.dir/pat-b1022.c.o
+.PHONY : pat-b1022.c.o
+
+pat-b1022.i: pat-b1022.c.i
+
+.PHONY : pat-b1022.i
+
+# target to preprocess a source file
+pat-b1022.c.i:
+	cd /home/hessen/pat-practice/_builds && $(MAKE) -f chapter3/CMakeFiles/pat-b1022.dir/build.make chapter3/CMakeFiles/pat-b1022.dir/pat-b1022.c.i
+.PHONY : pat-b1022.c.i
+
+pat-b1022.s: pat-b1022.c.s
+
+.PHONY : pat-b1022.s
+
+# target to generate assembly for a file
+pat-b1022.c.s:
+	cd /home/hessen/pat-practice/_builds && $(MAKE) -f chapter3/CMakeFiles/pat-b1022.dir/build.make chapter3/CMakeFiles/pat-b1022.dir/pat-b1022.c.s
+.PHONY : pat-b1022.c.s
+
+pat-b1032.o: pat-b1032.c.o
+
+.PHONY : pat-b1032.o
+
+# target to build an object file
+pat-b1032.c.o:
+	cd /home/hessen/pat-practice/_builds && $(MAKE) -f chapter3/CMakeFiles/pat-b1032.dir/build.make chapter3/CMakeFiles/pat-b1032.dir/pat-b1032.c.o
+.PHONY : pat-b1032.c.o
+
+pat-b1032.i: pat-b1032.c.i
+
+.PHONY : pat-b1032.i
+
+# target to preprocess a source file
+pat-b1032.c.i:
+	cd /home/hessen/pat-practice/_builds && $(MAKE) -f chapter3/CMakeFiles/pat-b1032.dir/build.make chapter3/CMakeFiles/pat-b1032.dir/pat-b1032.c.i
+.PHONY : pat-b1032.c.i
+
+pat-b1032.s: pat-b1032.c.s
+
+.PHONY : pat-b1032.s
+
+# target to generate assembly for a file
+pat-b1032.c.s:
+	cd /home/hessen/pat-practice/_builds && $(MAKE) -f chapter3/CMakeFiles/pat-b1032.dir/build.make chapter3/CMakeFiles/pat-b1032.dir/pat-b1032.c.s
+.PHONY : pat-b1032.c.s
+
+pat-b1036.o: pat-b1036.c.o
+
+.PHONY : pat-b1036.o
+
+# target to build an object file
+pat-b1036.c.o:
+	cd /home/hessen/pat-practice/_builds && $(MAKE) -f chapter3/CMakeFiles/pat-b1036.dir/build.make chapter3/CMakeFiles/pat-b1036.dir/pat-b1036.c.o
+.PHONY : pat-b1036.c.o
+
+pat-b1036.i: pat-b1036.c.i
+
+.PHONY : pat-b1036.i
+
+# target to preprocess a source file
+pat-b1036.c.i:
+	cd /home/hessen/pat-practice/_builds && $(MAKE) -f chapter3/CMakeFiles/pat-b1036.dir/build.make chapter3/CMakeFiles/pat-b1036.dir/pat-b1036.c.i
+.PHONY : pat-b1036.c.i
+
+pat-b1036.s: pat-b1036.c.s
+
+.PHONY : pat-b1036.s
+
+# target to generate assembly for a file
+pat-b1036.c.s:
+	cd /home/hessen/pat-practice/_builds && $(MAKE) -f chapter3/CMakeFiles/pat-b1036.dir/build.make chapter3/CMakeFiles/pat-b1036.dir/pat-b1036.c.s
+.PHONY : pat-b1036.c.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -159,11 +369,31 @@ help:
 	@echo "... clean"
 	@echo "... depend"
 	@echo "... rebuild_cache"
-	@echo "... codeup-1928"
 	@echo "... edit_cache"
+	@echo "... pat-b1022"
+	@echo "... codeup-1934"
+	@echo "... pat-b1032"
+	@echo "... codeup-1928"
+	@echo "... pat-b1001"
+	@echo "... pat-b1036"
 	@echo "... codeup-1928.o"
 	@echo "... codeup-1928.i"
 	@echo "... codeup-1928.s"
+	@echo "... codeup-1934.o"
+	@echo "... codeup-1934.i"
+	@echo "... codeup-1934.s"
+	@echo "... pat-b1001.o"
+	@echo "... pat-b1001.i"
+	@echo "... pat-b1001.s"
+	@echo "... pat-b1022.o"
+	@echo "... pat-b1022.i"
+	@echo "... pat-b1022.s"
+	@echo "... pat-b1032.o"
+	@echo "... pat-b1032.i"
+	@echo "... pat-b1032.s"
+	@echo "... pat-b1036.o"
+	@echo "... pat-b1036.i"
+	@echo "... pat-b1036.s"
 .PHONY : help
 
 
