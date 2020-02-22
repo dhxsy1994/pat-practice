@@ -9,5 +9,6 @@ add_executable(pat-b1001 pat-b1001.c)
 add_executable(pat-b1032 pat-b1032.c)
 add_executable(pat-b1036 pat-b1036.c)
 add_executable(codeup-5901 codeup-5901.c)
+add_executable(pat-b1009 pat-b1009.c)
 
 

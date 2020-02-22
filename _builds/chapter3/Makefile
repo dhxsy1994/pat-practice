@@ -111,6 +111,21 @@ depend:
 .PHONY : depend
 
 # Convenience name for target.
+chapter3/CMakeFiles/pat-b1009.dir/rule:
+	cd /home/hessen/pat-practice/_builds && $(MAKE) -f CMakeFiles/Makefile2 chapter3/CMakeFiles/pat-b1009.dir/rule
+.PHONY : chapter3/CMakeFiles/pat-b1009.dir/rule
+
+# Convenience name for target.
+pat-b1009: chapter3/CMakeFiles/pat-b1009.dir/rule
+
+.PHONY : pat-b1009
+
+# fast build rule for target.
+pat-b1009/fast:
+	cd /home/hessen/pat-practice/_builds && $(MAKE) -f chapter3/CMakeFiles/pat-b1009.dir/build.make chapter3/CMakeFiles/pat-b1009.dir/build
+.PHONY : pat-b1009/fast
+
+# Convenience name for target.
 chapter3/CMakeFiles/codeup-5901.dir/rule:
 	cd /home/hessen/pat-practice/_builds && $(MAKE) -f CMakeFiles/Makefile2 chapter3/CMakeFiles/codeup-5901.dir/rule
 .PHONY : chapter3/CMakeFiles/codeup-5901.dir/rule
@@ -323,6 +338,33 @@ pat-b1001.c.s:
 	cd /home/hessen/pat-practice/_builds && $(MAKE) -f chapter3/CMakeFiles/pat-b1001.dir/build.make chapter3/CMakeFiles/pat-b1001.dir/pat-b1001.c.s
 .PHONY : pat-b1001.c.s
 
+pat-b1009.o: pat-b1009.c.o
+
+.PHONY : pat-b1009.o
+
+# target to build an object file
+pat-b1009.c.o:
+	cd /home/hessen/pat-practice/_builds && $(MAKE) -f chapter3/CMakeFiles/pat-b1009.dir/build.make chapter3/CMakeFiles/pat-b1009.dir/pat-b1009.c.o
+.PHONY : pat-b1009.c.o
+
+pat-b1009.i: pat-b1009.c.i
+
+.PHONY : pat-b1009.i
+
+# target to preprocess a source file
+pat-b1009.c.i:
+	cd /home/hessen/pat-practice/_builds && $(MAKE) -f chapter3/CMakeFiles/pat-b1009.dir/build.make chapter3/CMakeFiles/pat-b1009.dir/pat-b1009.c.i
+.PHONY : pat-b1009.c.i
+
+pat-b1009.s: pat-b1009.c.s
+
+.PHONY : pat-b1009.s
+
+# target to generate assembly for a file
+pat-b1009.c.s:
+	cd /home/hessen/pat-practice/_builds && $(MAKE) -f chapter3/CMakeFiles/pat-b1009.dir/build.make chapter3/CMakeFiles/pat-b1009.dir/pat-b1009.c.s
+.PHONY : pat-b1009.c.s
+
 pat-b1022.o: pat-b1022.c.o
 
 .PHONY : pat-b1022.o
@@ -411,6 +453,7 @@ help:
 	@echo "... clean"
 	@echo "... depend"
 	@echo "... edit_cache"
+	@echo "... pat-b1009"
 	@echo "... rebuild_cache"
 	@echo "... codeup-5901"
 	@echo "... pat-b1022"
@@ -431,6 +474,9 @@ help:
 	@echo "... pat-b1001.o"
 	@echo "... pat-b1001.i"
 	@echo "... pat-b1001.s"
+	@echo "... pat-b1009.o"
+	@echo "... pat-b1009.i"
+	@echo "... pat-b1009.s"
 	@echo "... pat-b1022.o"
 	@echo "... pat-b1022.i"
 	@echo "... pat-b1022.s"
