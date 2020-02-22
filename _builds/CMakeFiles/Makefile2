@@ -63,6 +63,7 @@ CMAKE_BINARY_DIR = /home/hessen/pat-practice/_builds
 # Directory level rules for directory chapter3
 
 # Convenience name for "all" pass in the directory.
+chapter3/all: chapter3/CMakeFiles/codeup-5901.dir/all
 chapter3/all: chapter3/CMakeFiles/pat-b1022.dir/all
 chapter3/all: chapter3/CMakeFiles/codeup-1934.dir/all
 chapter3/all: chapter3/CMakeFiles/pat-b1032.dir/all
@@ -73,6 +74,7 @@ chapter3/all: chapter3/CMakeFiles/pat-b1036.dir/all
 .PHONY : chapter3/all
 
 # Convenience name for "clean" pass in the directory.
+chapter3/clean: chapter3/CMakeFiles/codeup-5901.dir/clean
 chapter3/clean: chapter3/CMakeFiles/pat-b1022.dir/clean
 chapter3/clean: chapter3/CMakeFiles/codeup-1934.dir/clean
 chapter3/clean: chapter3/CMakeFiles/pat-b1032.dir/clean
@@ -88,13 +90,50 @@ chapter3/preinstall:
 .PHONY : chapter3/preinstall
 
 #=============================================================================
+# Target rules for target chapter3/CMakeFiles/codeup-5901.dir
+
+# All Build rule for target.
+chapter3/CMakeFiles/codeup-5901.dir/all:
+	$(MAKE) -f chapter3/CMakeFiles/codeup-5901.dir/build.make chapter3/CMakeFiles/codeup-5901.dir/depend
+	$(MAKE) -f chapter3/CMakeFiles/codeup-5901.dir/build.make chapter3/CMakeFiles/codeup-5901.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/hessen/pat-practice/_builds/CMakeFiles --progress-num=5,6 "Built target codeup-5901"
+.PHONY : chapter3/CMakeFiles/codeup-5901.dir/all
+
+# Include target in all.
+all: chapter3/CMakeFiles/codeup-5901.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+chapter3/CMakeFiles/codeup-5901.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/hessen/pat-practice/_builds/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 chapter3/CMakeFiles/codeup-5901.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/hessen/pat-practice/_builds/CMakeFiles 0
+.PHONY : chapter3/CMakeFiles/codeup-5901.dir/rule
+
+# Convenience name for target.
+codeup-5901: chapter3/CMakeFiles/codeup-5901.dir/rule
+
+.PHONY : codeup-5901
+
+# clean rule for target.
+chapter3/CMakeFiles/codeup-5901.dir/clean:
+	$(MAKE) -f chapter3/CMakeFiles/codeup-5901.dir/build.make chapter3/CMakeFiles/codeup-5901.dir/clean
+.PHONY : chapter3/CMakeFiles/codeup-5901.dir/clean
+
+# clean rule for target.
+clean: chapter3/CMakeFiles/codeup-5901.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
 # Target rules for target chapter3/CMakeFiles/pat-b1022.dir
 
 # All Build rule for target.
 chapter3/CMakeFiles/pat-b1022.dir/all:
 	$(MAKE) -f chapter3/CMakeFiles/pat-b1022.dir/build.make chapter3/CMakeFiles/pat-b1022.dir/depend
 	$(MAKE) -f chapter3/CMakeFiles/pat-b1022.dir/build.make chapter3/CMakeFiles/pat-b1022.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/hessen/pat-practice/_builds/CMakeFiles --progress-num=7,8 "Built target pat-b1022"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/hessen/pat-practice/_builds/CMakeFiles --progress-num=9,10 "Built target pat-b1022"
 .PHONY : chapter3/CMakeFiles/pat-b1022.dir/all
 
 # Include target in all.
@@ -168,7 +207,7 @@ clean: chapter3/CMakeFiles/codeup-1934.dir/clean
 chapter3/CMakeFiles/pat-b1032.dir/all:
 	$(MAKE) -f chapter3/CMakeFiles/pat-b1032.dir/build.make chapter3/CMakeFiles/pat-b1032.dir/depend
 	$(MAKE) -f chapter3/CMakeFiles/pat-b1032.dir/build.make chapter3/CMakeFiles/pat-b1032.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/hessen/pat-practice/_builds/CMakeFiles --progress-num=9,10 "Built target pat-b1032"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/hessen/pat-practice/_builds/CMakeFiles --progress-num=11,12 "Built target pat-b1032"
 .PHONY : chapter3/CMakeFiles/pat-b1032.dir/all
 
 # Include target in all.
@@ -242,7 +281,7 @@ clean: chapter3/CMakeFiles/codeup-1928.dir/clean
 chapter3/CMakeFiles/pat-b1001.dir/all:
 	$(MAKE) -f chapter3/CMakeFiles/pat-b1001.dir/build.make chapter3/CMakeFiles/pat-b1001.dir/depend
 	$(MAKE) -f chapter3/CMakeFiles/pat-b1001.dir/build.make chapter3/CMakeFiles/pat-b1001.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/hessen/pat-practice/_builds/CMakeFiles --progress-num=5,6 "Built target pat-b1001"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/hessen/pat-practice/_builds/CMakeFiles --progress-num=7,8 "Built target pat-b1001"
 .PHONY : chapter3/CMakeFiles/pat-b1001.dir/all
 
 # Include target in all.
@@ -279,7 +318,7 @@ clean: chapter3/CMakeFiles/pat-b1001.dir/clean
 chapter3/CMakeFiles/pat-b1036.dir/all:
 	$(MAKE) -f chapter3/CMakeFiles/pat-b1036.dir/build.make chapter3/CMakeFiles/pat-b1036.dir/depend
 	$(MAKE) -f chapter3/CMakeFiles/pat-b1036.dir/build.make chapter3/CMakeFiles/pat-b1036.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/hessen/pat-practice/_builds/CMakeFiles --progress-num=11,12 "Built target pat-b1036"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/hessen/pat-practice/_builds/CMakeFiles --progress-num=13,14 "Built target pat-b1036"
 .PHONY : chapter3/CMakeFiles/pat-b1036.dir/all
 
 # Include target in all.

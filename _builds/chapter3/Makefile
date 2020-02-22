@@ -56,17 +56,6 @@ CMAKE_BINARY_DIR = /home/hessen/pat-practice/_builds
 #=============================================================================
 # Targets provided globally by CMake.
 
-# Special rule for the target rebuild_cache
-rebuild_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	/usr/bin/cmake -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
-.PHONY : rebuild_cache
-
-# Special rule for the target rebuild_cache
-rebuild_cache/fast: rebuild_cache
-
-.PHONY : rebuild_cache/fast
-
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
@@ -77,6 +66,17 @@ edit_cache:
 edit_cache/fast: edit_cache
 
 .PHONY : edit_cache/fast
+
+# Special rule for the target rebuild_cache
+rebuild_cache:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
+	/usr/bin/cmake -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+.PHONY : rebuild_cache
+
+# Special rule for the target rebuild_cache
+rebuild_cache/fast: rebuild_cache
+
+.PHONY : rebuild_cache/fast
 
 # The main all target
 all: cmake_check_build_system
@@ -109,6 +109,21 @@ preinstall/fast:
 depend:
 	cd /home/hessen/pat-practice/_builds && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
+
+# Convenience name for target.
+chapter3/CMakeFiles/codeup-5901.dir/rule:
+	cd /home/hessen/pat-practice/_builds && $(MAKE) -f CMakeFiles/Makefile2 chapter3/CMakeFiles/codeup-5901.dir/rule
+.PHONY : chapter3/CMakeFiles/codeup-5901.dir/rule
+
+# Convenience name for target.
+codeup-5901: chapter3/CMakeFiles/codeup-5901.dir/rule
+
+.PHONY : codeup-5901
+
+# fast build rule for target.
+codeup-5901/fast:
+	cd /home/hessen/pat-practice/_builds && $(MAKE) -f chapter3/CMakeFiles/codeup-5901.dir/build.make chapter3/CMakeFiles/codeup-5901.dir/build
+.PHONY : codeup-5901/fast
 
 # Convenience name for target.
 chapter3/CMakeFiles/pat-b1022.dir/rule:
@@ -254,6 +269,33 @@ codeup-1934.c.s:
 	cd /home/hessen/pat-practice/_builds && $(MAKE) -f chapter3/CMakeFiles/codeup-1934.dir/build.make chapter3/CMakeFiles/codeup-1934.dir/codeup-1934.c.s
 .PHONY : codeup-1934.c.s
 
+codeup-5901.o: codeup-5901.c.o
+
+.PHONY : codeup-5901.o
+
+# target to build an object file
+codeup-5901.c.o:
+	cd /home/hessen/pat-practice/_builds && $(MAKE) -f chapter3/CMakeFiles/codeup-5901.dir/build.make chapter3/CMakeFiles/codeup-5901.dir/codeup-5901.c.o
+.PHONY : codeup-5901.c.o
+
+codeup-5901.i: codeup-5901.c.i
+
+.PHONY : codeup-5901.i
+
+# target to preprocess a source file
+codeup-5901.c.i:
+	cd /home/hessen/pat-practice/_builds && $(MAKE) -f chapter3/CMakeFiles/codeup-5901.dir/build.make chapter3/CMakeFiles/codeup-5901.dir/codeup-5901.c.i
+.PHONY : codeup-5901.c.i
+
+codeup-5901.s: codeup-5901.c.s
+
+.PHONY : codeup-5901.s
+
+# target to generate assembly for a file
+codeup-5901.c.s:
+	cd /home/hessen/pat-practice/_builds && $(MAKE) -f chapter3/CMakeFiles/codeup-5901.dir/build.make chapter3/CMakeFiles/codeup-5901.dir/codeup-5901.c.s
+.PHONY : codeup-5901.c.s
+
 pat-b1001.o: pat-b1001.c.o
 
 .PHONY : pat-b1001.o
@@ -368,8 +410,9 @@ help:
 	@echo "... all (the default if no target is provided)"
 	@echo "... clean"
 	@echo "... depend"
-	@echo "... rebuild_cache"
 	@echo "... edit_cache"
+	@echo "... rebuild_cache"
+	@echo "... codeup-5901"
 	@echo "... pat-b1022"
 	@echo "... codeup-1934"
 	@echo "... pat-b1032"
@@ -382,6 +425,9 @@ help:
 	@echo "... codeup-1934.o"
 	@echo "... codeup-1934.i"
 	@echo "... codeup-1934.s"
+	@echo "... codeup-5901.o"
+	@echo "... codeup-5901.i"
+	@echo "... codeup-5901.s"
 	@echo "... pat-b1001.o"
 	@echo "... pat-b1001.i"
 	@echo "... pat-b1001.s"

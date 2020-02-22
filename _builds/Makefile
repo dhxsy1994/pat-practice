@@ -111,6 +111,19 @@ depend:
 .PHONY : depend
 
 #=============================================================================
+# Target rules for targets named codeup-5901
+
+# Build rule for target.
+codeup-5901: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 codeup-5901
+.PHONY : codeup-5901
+
+# fast build rule for target.
+codeup-5901/fast:
+	$(MAKE) -f chapter3/CMakeFiles/codeup-5901.dir/build.make chapter3/CMakeFiles/codeup-5901.dir/build
+.PHONY : codeup-5901/fast
+
+#=============================================================================
 # Target rules for targets named pat-b1022
 
 # Build rule for target.
@@ -196,6 +209,7 @@ help:
 	@echo "... depend"
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
+	@echo "... codeup-5901"
 	@echo "... pat-b1022"
 	@echo "... codeup-1934"
 	@echo "... pat-b1032"
